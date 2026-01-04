@@ -1,2 +1,2 @@
 # blog
-blog code
+Code du blog [linumer.wordpress.com](https://linumer.wordpress.com/)
