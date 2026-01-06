@@ -47,17 +47,20 @@ config:
     curve: stepBefore
 ---
 flowchart TD;
+    %% Génération 1
     subgraph La Fortune des Rougon
     R[Rougon] --- U11@{ shape: sm-circ, label: "Small start" }
     AF["Adélaïde Foulque"] --- U11
     AF --- U12@{ shape: sm-circ, label: "Small start" }
     M[Macquart] --- U12
     end
+    %% Génération 2
     U11 --- PR[Pierre Rougon]
     U12 --- UM[Ursule Macquart]
     U12 --- AM[Antoine Macquart]
     PR --- U21@{ shape: sm-circ, label: "Small start" }
     FP[Félicité Puech] --- U21
+    %% Génération 3
     U21 --- ER[Eugène]
     U21 --- PaR[Pascal]
     U21 --- AR[Aristide]
@@ -72,12 +75,10 @@ flowchart TD;
     U23 --- FrMo[François]
     U23 --- HeMo[Hélène]
     U23 --- SMo[Silvère]
-    %% Coupeau --- U31@{ shape: sm-circ}
-    %% G ---- U31
+    %% Génération 4
     G --- Coupeau --- Anna
     G ------ U32@{ shape: sm-circ}
     Lantier --- U32
-    %% U31 --- Anna
     U32 --- Claude
     U32 --- Jacques
     U32 --- Etienne
@@ -91,7 +92,7 @@ flowchart TD;
     U34 --- SeMo[Serge Mouret]
     U34 --- DeMo[Désirée]
     Lisa --- PaQu[Pauline Quenu]
-    HeMo --- JeGr[jeanne Grandjean]
+    HeMo --- JeGr[Jeanne Grandjean]
     subgraph La conquête de Plassans
     MR
     FrMo
