@@ -6,25 +6,24 @@ Comment générer une image de taijitu
 - à afficher dynamiquement en javascript
 - et test de ASCII STL
 
-### UTF-8
+Et pour commencer ne réinventons pas la roue :
 
 UTF-8 U+262F ☯
 
-XML : &#9775; (☯)
+XML : "&#9775;" &#9775;
+
+
+Le reste c'est pour apprentissage
 
 ### Image en python
 
-Voici le code
-
-![include](plot_taijitu.py)
+Lien vers le [code python](plot_taijitu.py)
 
 
-#### Image javascriot
+#### Image canvas
 
+Lien vers le [code canvas du html](taijitu.html)
 
-Lien vers le rendu du [taijitu](taijitu.html)
+### taijitu
 
-et le code
-
-```{include} taijitu.html
-
+[taijitu.stl](taijitu.stl)
