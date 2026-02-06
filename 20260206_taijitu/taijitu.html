@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Taijitu</title>
+</head>
+<body>
+
+<canvas id='taijitu' width='400' height='300'></canvas>
+
+<script>
+let canvas = document.getElementById('taijitu');
+let context = canvas.getContext('2d');
+let x0 = canvas.width / 2;
+let y0 = canvas.height / 2;
+
+let color1 = "green"  //"white"
+let color2 = "black"  // "black"
+ 
+function circle(y, radius, color) {
+  context.beginPath();
+  context.fillStyle = color;
+  context.arc(x0, y + y0, radius, 0, Math.PI * 2);
+  context.fill();
+}
+let radius = 120;
+circle(0, radius, color2)
+context.fillStyle = color1;
+context.beginPath();
+// demi-cercle blanc dans le noir
+context.arc(x0, y0, radius, Math.PI * 0.5, Math.PI * 1.5);
+context.fill();
+circle(radius / 2, radius / 2, color2);
+circle(-radius / 2, radius / 2, color1);
+circle(radius / 2, radius / 8, color1);
+circle(-radius / 2, radius / 8, color2);
+</script>
+</body>
+</html>
