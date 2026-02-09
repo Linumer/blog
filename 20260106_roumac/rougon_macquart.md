@@ -1,6 +1,6 @@
 # Arbre généalogique Rougon-Macquart
 
-Exemple d'utilisation de mermaid pour création d'un arbre généaloqiue
+Exemple d'utilisation de mermaid pour création d'un arbre généalogique.
 
 ## 3 générations
 

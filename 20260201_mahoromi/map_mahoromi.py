@@ -9,12 +9,11 @@ NB : see also https://prettymapp.streamlit.app/
 import prettymaps
 
 plot = prettymaps.plot(
-    'Yokohama',
-    preset='minimal',
-    # radius=5000,
-    save_as='yakohama2.png',
-    # layers={'building': False},
-    # keypoints={'tags': {'natural': ['beach']}},
+    (35.44, 139.656),  # 'Yokohama',
+    # preset='minimal',
+    radius=3000,
+    save_as='yakohama9.png',
+    layers={'building': False},
     show=False,
 )
 
