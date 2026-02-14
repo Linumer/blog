@@ -24,4 +24,4 @@ Lien vers le [code python](plot_taijitu.py)
 Lien vers le [code canvas du html](taijitu.html)
 
 
-![taijitu](taijitu.png taijitu )
+![taijitu](taijitu.png "taijitu")
