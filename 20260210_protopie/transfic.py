@@ -29,7 +29,20 @@ fig.update_yaxes(
     type="category",  #  y comme une catégorie (pas de tri)
     autorange="reversed"  # Optionnel : inverse l'ordre si nécessaire
 )
-fig.update_traces(marker_size=10)
+# fig.update_traces(marker_size=10)y
+
+# replace markers by icones
+icons_dict = {'Pol': 'euro_sign', 'Tec': 'gears', 'Ret': 'tree', 'Vie': 'house'}
+df['Symbol'] = [icons_dict.get(categ[:3]) for categ in df['Aspects']]
+for k, sym in enumerate(df['Symbol']):
+    fig.data[k].update(
+        marker=dict(
+            symbol=sym,  # Symbole Font Awesome
+            size=20
+        )
+    )
+
+fig.show()
 
 
 # Sort categories in descending order
