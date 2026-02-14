@@ -19,11 +19,9 @@ Le reste c'est pour apprentissage
 
 Lien vers le [code python](plot_taijitu.py)
 
-
 #### Image canvas
 
 Lien vers le [code canvas du html](taijitu.html)
 
-### taijitu
 
-[taijitu.stl](taijitu.stl)
+![taijitu](taijitu.png taijitu )
