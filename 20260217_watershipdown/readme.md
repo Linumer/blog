@@ -12,3 +12,5 @@ La colline de Watership Down existe vraiment. En voici quelques cartes.
 
 PS: mon objectif initial était de refaire une carte avec Cartopy, mais pas réussi à faire un truc satisfaisant encore.
 
+![image](watershipdown_osm.jpg "cartopy map")
+
