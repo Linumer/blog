@@ -41,7 +41,7 @@ class DotBooks(object):
 
         # replace markers by icones
         icons_dict = {'Politique': '€', 'Technique': "⚙️", 'Retour à la nature': "🌳", 'Vie quotidienne': "🏠"}
-        unics_dict = {'Politique': '€', 'Technique': u"\u2699",
+        unics_dict = {'Politique': '\u2696', 'Technique': u"\u2699",
                       'Retour à la nature': u"\u2698", 'Vie quotidienne': u"\u2302"}
         self.data['Symbol'] = [icons_dict.get(categ) for categ in self.data['Aspects']]
         self.data['Unicode'] = [unics_dict.get(categ) for categ in self.data['Aspects']]
